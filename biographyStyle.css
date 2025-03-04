@@ -1,0 +1,13 @@
+body{
+    font-family: Georgia, Lora, Merriweather;
+    color: #1C53A3;
+    margin: 22px;
+    background-color: #ADBBDA;
+   
+}
+
+p{
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: justify;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body {
+            background-image: url('background.png');  
+            background-size: cover;   
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            color: #1C53A3;
+            font-family: Georgia;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 750px;
+        }
+        .navbar {
+            font-family: Helvetica, sans-serif;
+            width: 100%;
+            background-color: #1C53A3;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #3d72c0;
+            border-radius: 5px;
+        }
+
+        .navbar a.active {
+        color: #65ccd8;
+         }
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 40px;
+            border-radius: 100px;
+            width: 70%;
+        }
+
+        .image {
+            background-color: #1C53A3;
+            padding: 60px;
+            border-radius: 10px;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img {
+            width: 150%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .text h2 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .text h1 {
+            margin: 10px 0;
+            font-size: 50px;
+            color: #1C53A3;
+        }
+
+        .text p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+    
+
+    <div class="container">
+        <div class="image">
+            <img src="me.jpg" alt="Profile Picture">
+        </div>
+        <div class="text">
+            <h2>Hello!</h2>
+            <h1>I'm Gilro</h1>
+            <p>A second-year college student</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
