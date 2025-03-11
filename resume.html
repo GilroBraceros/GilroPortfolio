@@ -3,23 +3,23 @@
     <head>
         <style type="text/css"> 
 
-        h1{ 
-            background-color:#1C53A3 ;
+        
+
+        .header{ 
+            background-color: #1C53A3;
             color: white;
             text-align: center;
             font-family: Helvetica, Lato;
             padding: 20px;
-            border-radius: 30;
-            box-shadow: 10px 10px #3d52a0;
+            border-radius: 30px;
             margin-bottom: 20px;
 
             
             
         }
-        header{
-            text-align: center;
 
-        }
+        
+
         h2{ 
 
             font-style: italic;
@@ -40,11 +40,11 @@
         body {
             background-color: #ADBBDA;
             color: #1C53A3;
+            margin: 20px;
             font-size: 16px;
             font-family: Georgia;
         }
         P {
-            background-color: #ADBBDA;
             text-align: justify;
             line-height: 1.8;
             letter-spacing: 1px;
@@ -52,13 +52,16 @@
             margin: 32px;
             margin-bottom: 20px;
         }
-        div{    
-            margin: 32px;
+        .container{
+            background-color: hsla(221, 97%, 87%, 0.973);
             padding: 20px;
-            border-radius: 30;
-            box-shadow: 10px 10px 20px #1c53a3;
-            margin-bottom: 20px;;
-        }
+            border-radius: 50px;
+            margin-bottom: 20px;
+            border-color: #3d52a0;
+            border-style: solid;
+            border-width: 1px;
+           
+            }
         .bottomButtons {
                 display: flex;
                 justify-content: space-between; 
@@ -77,6 +80,37 @@
                 border-radius: 5px;
         }
 
+        .imgcontainer {
+                display: flex;
+                justify-content: left; 
+                gap: 10px;
+            }
+
+        img {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 10%;
+            background-color: #65CCD8;
+            width: 150px;
+            height: 150px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+        
+        }
+
+        .info h1 {
+            font-family: Helvetica;
+            margin: 0;
+        }
+        .info p {
+            margin: 0;
+            font-size: 18px;
+            }
+
         </style>
         <meta charset="utf-8">
         <title></title>
@@ -86,22 +120,28 @@
         <!--BRACEROS, GILRO-->
         <!--ITAD-->
   
-        <h1>GILRO BRACEROS</h1>
-        <hr></hr>
+        <h1 class="header">Resume</h1>
  
-    <div>
+    <div class="container">
 
-    <H2 style="background-color:white;  padding: 10px;
-            border-radius:10px; width:20% ">ABOUT ME</H2>
+        <div class="imgcontainer"><img src="2x2.jpg" alt="">
+            
+          <div class="info"> <h1> Gilro Braceros</h1>
+            <p>Second Year College Student</p></div>
+        </div> 
+
+
+        
+
+    <H2 ">ABOUT ME</H2>
          
-        <ul type="disc">
+        <ul type="circle">
                 <li>I’m Gilro Braceros, born and raised in Alcala, Pangasinan. I'm 19 years old and currently studying at University of the East Manila.  I aim to contribute my skills to your company where I know that I can grow and make an impact.</li>
             </ul>
         
-    </div>
-
-    <div>
-        <h2 style="background-color:white; padding: 10px;border-radius:10px;  width:20% ">Skills</h2>
+        <hr>
+        
+        <h2>Skills</h2>
         <ol type="I">
             <li><B>Programming Languages</B></li>
             <UL>
@@ -118,11 +158,11 @@
                 <LI>HTML</LI>
                 <LI>CSS</LI>
             </UL>
-        </div>
     </ul>
-    </div>
-    <div>
-        <h2 style="background-color:white; padding: 10px;border-radius:10px;  width:20% ">Work Experience</h2>
+
+</ol>
+<hr>
+        <h2>Work Experience</h2>
         <ul>
             <h3><li>Tech Support Intern</li></h3>
             <ul type="circle">
@@ -130,27 +170,26 @@
             </ul>
             
         </ul>
-    </div>
-    <div>
-    <h2 style="background-color:white; padding: 10px;border-radius:10px;  width:20% ">Educational Attainment</h2>
+<hr>
+    <h2>Educational Attainment</h2>
     
         <ul>
             <li><strong>Bachelor’s Degree in Information Technology</strong> - University of the East</li>
             <li><strong>Tertiary Education:</strong> Bersamin Agro Industrial High-School</li>
             <li><strong>Elementary Education:</strong> Bersamin Elementary School</li>
         </ul>
-    </div>
 
-    <div>
-        <h2 style="background-color:white; padding: 10px;border-radius:10px;  width:20% ">Skills, Training, Seminar Attended</h2>
+        <hr>
+
+        <h2>Skills, Training, Seminar Attended</h2>
         <ul type="disc">
             <li>RND Importance of Cyber security (November 2024)</li>
             <li>Seminar on Emergence of Artificial Intelligence (March 2024)</li>
             <li>Seminar on GitHub (Februrary 2024)</li>
         </ul>
-    </div>
-    <div>
-        <h2 style="background-color:white; padding: 10px;border-radius:10px;  width:20% ">Hobbies and Interest</h2>
+    <hr>
+
+        <h2>Hobbies and Interest</h2>
         <ul type="disc">
             <li>Gaming and Competitive Esports</li>
             <li>Photography and Digital Editing</li>

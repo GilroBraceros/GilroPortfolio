@@ -43,19 +43,20 @@
                 text-align: center;
                 font-family: Helvetica, Lato;
                 padding: 20px;
-                border-radius: 30;
-                box-shadow: 10px 10px #3d52a0;
+                border-radius: 30px;
                 margin-bottom: 20px;
             }
             h2{
                 color: #1C53A3;
-                text-align: left;
+                text-align: center;
+                font-size: 30px;
                 font-family: Helvetica, Futura, Lato;
                 text-transform: capitalize;
                
                 
             }
             body {
+            background-color: #adbbda;
             font-family: Georgia;
             padding-top: 70px; 
              }
@@ -81,29 +82,36 @@
                 
             }
 
-            .bottomButtons {
-                display: flex;
-                justify-content: space-between; 
-                align-items: center;
-                margin-top: 20px; 
-                padding: 10px;
+            .container{
+            background-color: hsla(221, 97%, 87%, 0.973);
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
             }
 
-            .bottomButtons a {
-                background-color: #1C53A3;
-                color: #F2F2F2;
-                font-family: Helvetica;
-                padding: 5px 10px;
-                text-decoration: none;
-                line-height: 50px;
-                border-radius: 5px;
+            .imgcontainer {
+                display: flex;
+                justify-content: center; 
+                gap: 10px;
             }
+
+            img {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 10%;
+            background-color: #65CCD8;
+            width: 200px;
+            height: 200px;
+        }
             
         </style>
             <meta charset="utf-8">
             <title></title>
         </head>
         <nav class="navbar">
+            <a href="index.html">Home</a>
             <a href="biography.html#childhood">Childhood</a>
             <a href="biography.html#teenage">Teenager Years</a>
             <a href="biography.html#college">College Years</a>
@@ -118,8 +126,10 @@
         <div>
             <h1 id="childhood"> DISTANCE BETWEEN DREAMS </h1>
         </div>
-        <div>
-            <h2 style="text-shadow: 2px 2px 10px #1C53A3;">Childhood Years </h2>
+        <div class="container">
+            <h2>Childhood Years </h2>
+            <div class="imgcontainer">
+            <img src="ch1.jpg" alt="Childhood Picture"> <img src="ch2.jpg" alt=""> <img src="ch3.jpg" alt=""><img src="ch4.jpg" alt=""></div>
             <p>I’m Gilro Braceros, born and raised in Alcala, Pangasinan.<sup>1</sup> Growing up in the
                 province taught me the value of simplicity, hard work, and family.<sup>2</sup> Being the youngest of
                 three siblings, I always looked up to my older brother and sister.<sup>3</sup> My childhood was filled
@@ -144,12 +154,15 @@
                 who I am today.<sup>18</sup> The values I learned growing up in my hometown Alcala continue to
                 guide me in everything I do.<sup>19</sup> Life was light back then, no responsibilities and no burden
                 to carry<sup id="teenage">20</sup></p>
+                
+                <div class="gotop">
+                    <a href="#top"> GO TOP </a>
+                </div>
         </div>
-        <div class="gotop">
-            <a href="#top"> GO TOP </a>
-        </div>
-        <div>
-            <h2 style="text-shadow: 2px 2px 10px #1C53A3;">Teenager Years</h2>
+        <div class="container">
+            <h2>Teenager Years</h2>
+            <div class="imgcontainer">
+                <img src="ta3.jpg" alt="Childhood Picture"> <img src="ta4.jpg" alt=""> <img src="ta2.jpg" alt=""><img src="ta1.jpg" alt=""></div>
             <p>My teenage years were a mix of new experiences, challenges, and unforgettable
                 moments.<sup>1</sup> I went to Bersamin Agro Industrial High School, where I started to explore
                 different interests.<sup>2</sup> Around this time, I got hooked on Mobile Legends, a popular MOBA
@@ -177,8 +190,12 @@
                     <a href="#top"> GO TOP </a>
                 </div>
         </div>
-        <div id="college">
-            <h2 style="text-shadow: 2px 2px 10px #1C53A3;">College Years</h2>    
+
+        <div class="container" id="college">
+            
+            <h2 >College Years</h2> 
+            <div class="imgcontainer">
+                <img src="c1.jpg" alt="Childhood Picture"> <img src="c2.jpg" alt=""> <img src="c3.jpg" alt=""><img src="c4.jpg" alt=""></div>   
             <p>Transitioning to college was a major adjustment for me.<sup>1</sup> Coming from a quiet
                 province like Pangasinan, moving to Manila felt overwhelming.<sup>2</sup> Life here moves so much
                 faster, and I have to learn how to keep up.<sup>3</sup> Every time I return to Manila after spending
@@ -204,9 +221,8 @@
                 that comes with it.<sup>21</sup>
                 </p>
 
-                <div class="bottomButtons">
-                    <a href="#top">GO TOP</a>
-                    <a href="index.html">HOME</a>
+                <div class="gotop">
+                    <a href="#top"> GO TOP </a>
                 </div>
                 </div>
         </div>  
