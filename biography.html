@@ -27,14 +27,23 @@
                 padding: 10px 15px;
         }
 
+        .navbar a.active{
+                color: #65CCD8;
+                text-decoration: underline;
+
+        }
+
             .navbar a:hover {
                 background-color: #3d72c0;
                 border-radius: 5px;
         }
 
-            .navbar a:active{
-                color: #65CCD8;
+            
 
+        hr{
+            background-color: aliceblue;
+            height: 2px;
+            width: 100%;
         }
 
             h1{ 
@@ -85,25 +94,32 @@
             .container{
             background-color: hsla(221, 97%, 87%, 0.973);
             padding: 20px;
+            border-style: groove;
+            border-width: 1px;
             border-radius: 30px;
-            box-shadow: 10px;
             margin-bottom: 20px;
-            border-radius: 10px;
+           
             }
 
             .imgcontainer {
-                display: flex;
+                display:flex;
                 justify-content: center; 
-                gap: 10px;
+                
+                
             }
 
             img {
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 10%;
+            border-style: groove;
+            border-color: #F2F2F2;
             background-color: #65CCD8;
             width: 200px;
             height: 200px;
+            transition: transform 0.2s ease;
+
+        }
+
+        img:hover{
+            transform: scale(1.5);
         }
             
         </style>
@@ -124,12 +140,17 @@
             <!--BRACEROS, GILRO-->
             <!--ITAD-->
         <div>
+            <hr>
             <h1 id="childhood"> DISTANCE BETWEEN DREAMS </h1>
+            <hr>
         </div>
         <div class="container">
             <h2>Childhood Years </h2>
             <div class="imgcontainer">
-            <img src="ch1.jpg" alt="Childhood Picture"> <img src="ch2.jpg" alt=""> <img src="ch3.jpg" alt=""><img src="ch4.jpg" alt=""></div>
+            <a href="ch1.jpg" target="display"><img src="ch1.jpg" alt="Little Gilro doing silly pose" title="6 year-old me being silly"></a>
+            <a href="ch2.jpg" target="display"><img src="ch2.jpg" alt="Little Gilro being cool" title="Little me feeling cool"></a> 
+            <a href="ch3.jpg" target="display"><img src="ch3.jpg" alt="Little Gilro graduating kindergarten" title="Little me graduating kindergarten"></a>
+            <a href="ch4.jpg" target="display"><img src="ch4.jpg" alt="Little me experiencing Manila for the first time" title="Me at 7 years old experiencing Manila for the first time"></a></div>
             <p>I’m Gilro Braceros, born and raised in Alcala, Pangasinan.<sup>1</sup> Growing up in the
                 province taught me the value of simplicity, hard work, and family.<sup>2</sup> Being the youngest of
                 three siblings, I always looked up to my older brother and sister.<sup>3</sup> My childhood was filled
@@ -162,7 +183,10 @@
         <div class="container">
             <h2>Teenager Years</h2>
             <div class="imgcontainer">
-                <img src="ta3.jpg" alt="Childhood Picture"> <img src="ta4.jpg" alt=""> <img src="ta2.jpg" alt=""><img src="ta1.jpg" alt=""></div>
+                <a href="ta3.jpg" target="display"><img src="ta3.jpg" alt="7th grade Gilro at recognition day" title="7th grade me with my mom at recognition day"></a>
+                <a a href="ta4.jpg" target="display"><img src="ta4.jpg" alt="Gilro holding a bouquet of flowers" title="Me before surprising my mother for her birthday"></a> 
+                <a  a href="ta4.jpg" target="display"><img src="ta2.jpg" alt="Gilro with his circle of friends" title="Me with my high-school friends"></a>
+                <a a href="ta1.jpg" target="display"></a><img src="ta1.jpg" alt="Gilro with his circle of friends" title="Me with my senior high-school friends"></a></div>
             <p>My teenage years were a mix of new experiences, challenges, and unforgettable
                 moments.<sup>1</sup> I went to Bersamin Agro Industrial High School, where I started to explore
                 different interests.<sup>2</sup> Around this time, I got hooked on Mobile Legends, a popular MOBA
@@ -195,7 +219,10 @@
             
             <h2 >College Years</h2> 
             <div class="imgcontainer">
-                <img src="c1.jpg" alt="Childhood Picture"> <img src="c2.jpg" alt=""> <img src="c3.jpg" alt=""><img src="c4.jpg" alt=""></div>   
+                <a href="c1.jpg" target="display"><img src="c1.jpg" alt="1st year Gilro with a new cut" title="Me with a fresh haircut" ></a> 
+                <a href="c2.jpg" target="display"><img src="c2.jpg" alt="Gilro trying to be cool" title="Me trying to have a cool photo"></a> 
+                <a href="c3.jpg" target="display"><img src="c3.jpg" alt="A selfie of Gilro with no haircut" title="Me with long hair"></a>
+                <a <a href="c4.jpg" target="display"><img src="c4.jpg" alt="Gilro with his girlfriend" title="Me with my girlfriend"></a></div> 
             <p>Transitioning to college was a major adjustment for me.<sup>1</sup> Coming from a quiet
                 province like Pangasinan, moving to Manila felt overwhelming.<sup>2</sup> Life here moves so much
                 faster, and I have to learn how to keep up.<sup>3</sup> Every time I return to Manila after spending

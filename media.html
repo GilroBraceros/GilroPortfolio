@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1C53A3;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.navbar {
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    background-color: #1C53A3;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #3d72c0;
+    border-radius: 5px;
+}
+
+.navbar a.active {
+    color: #65ccd8;
+}
+
+.music-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #1C53A3;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+hr{
+     background-color: aliceblue;
+     height: 2px;
+     width: 100%;
+        }
+
+
+.genre-section {
+    background-color: hsla(221, 97%, 87%, 0.1);
+    
+    padding: 25px;
+    margin-bottom: 30px;
+
+}
+
+.genre-section .hiphop{
+    background-image: url('hiphopbg.jpg');
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(1, 0, 0, 0.1);
+}
+
+.genre-section .rnb{
+    background-image: url('rnbbg.jpg');
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(1, 0, 0, 0.1);
+}
+
+.genre-section .rock{
+    background-image: url('rockbg.jpg');
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(1, 0, 0, 0.1);
+}
+
+
+
+
+.genre-section h2 {
+    color: white;
+    text-shadow:2px 2px 25px #0861ee;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 2em;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.tracks-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.track-card {
+    background-color: hsla(221, 97%, 87%, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+
+.track-card:hover {
+    transform: scale(1.02);
+}
+
+.track-card h3 {
+    color: white;
+    margin: 10px;
+}
+
+.track-card .artist {
+    color: #adbbda;
+    font-style: italic;
+    margin: 10px;
+}
+
+   .track-card .kiyo{
+    background-image: url(tc1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    
+
+}
+
+.track-card .post{
+    background-image: url(sun.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+.track-card .juice{
+    background-image: url(hide.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+.track-card .huli{
+    background-image: url(huli.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+.track-card .powers{
+    background-image: url(powers.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+.track-card .denim{
+    background-image: url(denim.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+.track-card .hinuha{
+    background-image: url(hinuha.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+.track-card .alone{
+    background-image: url(alone.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+.track-card .zild{
+    background-image: url(70.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+
+
+
+
+    .audio {
+    width: 100%;
+    margin-top: 10px
+}
+
+    
+    .music-container {
+        padding: 10px;
+    }
+    
+    .tracks-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .genre-section {
+        padding: 15px;
+    }
+
+    .film-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category-section {
+            background-color: hsla(221, 97%, 87%, 0.973);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-section h2 {
+            color: #1C53A3;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .video-wrapper {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            gap: 20px;
+            
+            
+        }
+
+        
+
+        .video-card {
+            background-color: hsla(221, 54%, 80%, 0.973);
+            padding: 20px;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            width: 60%;
+    
+        }
+
+        .video-card:hover {
+            transform: scale(1.02);
+        }
+
+        .video-card h3 {
+            color: #1C53A3;
+            margin: 0 0 10px 0;
+            min-height: 40px;
+        }
+
+        .video-card .description {
+            color: #666;
+            font-style: italic;
+            margin: 0 0 15px 0;
+            height: 80px;
+            
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+
+
+            .film-container {
+                padding: 10px;
+            }
+
+            .category-section {
+                padding: 15px;
+            }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photodump.html">Gallery</a>
+        <a href="media.html" class="active">Media</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+
+    <div class="music-container">
+        <hr>
+        <h1>My Beat</h1>
+        <hr>
+
+        <div class="genre-section">
+            <div class="hiphop">
+            <h2><i>Hip-hop</i></h2>
+                <div class="track-card">
+                    <div>
+                <div class="kiyo">
+                    <h3>"Tulo Laway"</h3>
+                    <p class="artist">Kiyo</p>
+                    <audio controls>
+                        <source src="TULOLAWAY.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                </div>
+                <div class="track-card">
+                    <div class="post">
+                    <h3>"Staring at the Sun"</h3>
+                    <p class="artist">Post Malone</p>
+                    <audio controls>
+                        <source src="SUN.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                </div>
+                <div class="track-card">
+                    <div class="juice">
+                    <h3>"Hide"</h3>
+                    <p class="artist">Juice Wrld</p>
+                    <audio controls>
+                        <source src="Hide.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="genre-section">
+                <div class="rnb">
+                <h2><i>R&B </i></h2>
+                    <div class="track-card">
+                    <div class="huli">
+                        <h3>"Hanggang sa Huli"</h3>
+                        <p class="artist">Alisson Shore</p>
+                        <audio controls>
+                            <source src="huli.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    </div>
+                    <div class="track-card">
+                        <div class="powers">
+                        <h3>"Superpowers"</h3>
+                        <p class="artist">Daniel Caesar</p>
+                        <audio controls>
+                            <source src="powers.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    </div>
+                    <div class="track-card">
+                        <div class="denim">
+                        <h3>"Japanese Denim"</h3>
+                        <p class="artist">Daniel Caesar</p>
+                        <audio controls>
+                            <source src="denim.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="genre-section">
+                    <div class="rock">
+                    <h2><i>Alternative Rock</i></h2>
+                        <div class="track-card">
+                        <div class="hinuha">
+                            <h3>"Hinuha"</h3>
+                            <p class="artist">Alisson Shore</p>
+                            <audio controls>
+                                <source src="hinuha.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        </div>
+                        <div class="track-card">
+                            <div class="alone">
+                            <h3>"I Would Rather Live Alone"</h3>
+                            <p class="artist">IV of Spades</p>
+                            <audio controls>
+                                <source src="alone.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        </div>
+                        <div class="track-card">
+                            <div class="zild">
+                            <h3>"Dekada '70"</h3>
+                            <p class="artist">Zild</p>
+                            <audio controls>
+                                <source src="70.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="film-container">
+                <hr>
+                <h1>My Kind of Film</h1>
+                <hr>
+        
+                <div class="category-section">
+                    <h2>TV Shows</h2>
+                    <div class="video-wrapper">
+                        <div class="video-card">
+                            <h3>Daredevil</h3>
+                            <p class="description">Matt Murdock fights relentlessly for the law and justice, both as a crusading attorney and as the hard-hitting costumed crimefighter called Daredevil.</p>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/7xALolZzhSM?si=J6Fb0jwYwuwrtVX8" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <h3>Attack on Titan</h3>
+                            <p class="description">The story follows the adventures of Eren Jaeger and his childhood friends Mikasa and Armin, whose lives are changed forever after a Colossal Titan breaches the wall of their home town.</p>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/LV-nazLVmgo?si=Z204C4PYkJK7TBuh" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+        
+                <div class="category-section">
+                    <h2>Movies</h2>
+                    <div class="video-wrapper">
+                        <div class="video-card">
+                            <h3>Avengers: Endgame</h3>
+                            <p class="description">The world's heroes finally understand just how fragile reality is, and the sacrifices that must be made to uphold it, in a story of friendship, teamwork and setting aside differences to overcome an impossible obstacle.</p>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/znk2OICHbjY?si=4iCb_wKNVu9tRQGH" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <h3>Everything Everywhere All At Once</h3>
+                            <p class="description">When an interdimensional rupture unravels reality, an unlikely hero must channel her newfound powers to fight bizarre and bewildering dangers from the multiverse as the fate of the world hangs in the balance.</p>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/wxN1T1uxQ2g?si=YkzM6FDZFeGysHzth" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        </div>
+
+
+        
+
+        </div>
+
+        
+</body>
+</html>
