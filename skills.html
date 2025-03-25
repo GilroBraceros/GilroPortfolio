@@ -3,7 +3,7 @@
     <head>
         <style type="text/css"> 
 
-        .navbar {
+    .header-nav {
             font-family: Helvetica, sans-serif;
             width: 100%;
             background-color: #1C53A3;
@@ -14,9 +14,10 @@
             position: fixed;
             top: 0;
             left: 0;
+            z-index: 10;
         }
 
-        .navbar a {
+        .header-nav a {
             color: white;
             text-decoration: none;
             font-size: 18px;
@@ -24,14 +25,48 @@
             padding: 10px 15px;
         }
 
-        .navbar a:hover {
+        .header-nav a:hover {
             background-color: #3d72c0;
             border-radius: 5px;
         }
 
-        .navbar a:active{
-            color: #65CCD8;
+        .header-nav a.active {
+            color: #65ccd8;
+        }
+        .section-nav {
+            font-family: Helvetica, sans-serif;
+            width: 100%;
+            background-color: #1C53A3;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 15px;
+            position: sticky;
+            top: 60px;
+            z-index: 1000;
+        }
 
+        .section-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px 12px;
+        }
+
+        .section-nav a:hover {
+            background-color: #3d72c0;
+            border-radius: 5px;
+        }
+
+        .container {
+            background-color: hsla(221, 97%, 87%, 0.973);
+            padding: 20px;
+            border-style: groove;
+            border-width: 1px;
+            border-radius: 30px;
+            margin: 50px auto 20px; 
         }
 
 
@@ -39,19 +74,19 @@
             background-color: #1c53a3;
             color:aliceblue;
             text-align: center;
-            font-family: Helvetica, Lato;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
+            font-size: xx-large;
             
         }
         h2{ 
             color: #1C53A3;
             text-align: center;
-            font-family: Helvetica, Lato;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             padding: 20px;
-            
-           
+            font-size: x-large;
             
 
         }
@@ -68,7 +103,7 @@
             background-color: #ADBBDA;
             color: #1C53A3;
             font-size: 16px;
-            font-family: Georgia;
+            font-family: Helvetica;
         }
         P {
             text-indent: 50px;
@@ -78,15 +113,30 @@
             word-spacing: 2px;
         }
 
+        .gotop{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 20px;
+
+           
+        }
         .gotop a{
-                background-color: #1C53A3;
-                color: #F2F2F2;
-                font-family: Helvetica;
-                padding: 10px 20px;
-                text-decoration: none;
-                line-height: 50px;
-                
-            }
+            background-color: #1C53A3;
+            color: #F2F2F2;
+            font-family: Helvetica;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #F2F2F2;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .gotop a:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+            
+        }
         
         .imgcontainer {
                 display: flex;
@@ -107,15 +157,6 @@
             transform: scale(1.5);
         }
 
-        
-        .container{
-            background-color: hsla(221, 97%, 87%, 0.973);
-            padding: 20px;
-            border-style: groove;
-            border-width: 1px;
-            border-radius: 30px;
-            margin-bottom: 20px;
-            }
         sup{    
             font-weight: bold;
         }
@@ -125,21 +166,35 @@
         <meta charset="utf-8">
         <title></title>
     </head>
+
     <body id="top">
+
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="biography.html">Biography</a>
+            <a href="skills.html"  class="active">Skills</a>
+            <a href="resume.html">Resume</a>
+            <a href="photodump.html">Gallery</a>
+            <a href="media.html">My Beat</a>
+            <a href="film.html">Films</a>
+            <a href="tv.html">TV Shows</a>
+            <a href="dream.html">Destinations</a>
+            <a href="bucketlist.html">Bucket List</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
         <!--BRACEROS, GILRO-->
         <!--ITAD-->
-        <nav class="navbar">
-            <a href="index.html">Home</a>
+    <div align="center">
+        <hr></hr>
+        <h1>PIECES OF ME</h1>
+        <hr></hr>
+    </div>
+    <div class="container" >
+        <nav class="section-nav">
             <a href="skills.html#skills">Skills</a>
             <a href="skills.html#hobbies">Hobbies</a>
             <a href="skills.html#interests">Interests</a>
         </nav>
-    <div align="center">
-        <hr></hr>
-        <h1>Pieces of Me</h1>
-        <hr></hr>
-    </div>
-    <div class="container" >
         <h2 id="skills">SKILLS</h2>
         <div class="imgcontainer">
            

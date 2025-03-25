@@ -1,44 +1,98 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-
-         <link rel="stylesheet" href="biographyStyle.css">
-
-            <style type="text/css"> 
-
-                 .navbar {
-                font-family: Helvetica, sans-serif;
-                width: 100%;
-                background-color: #1C53A3;
-                padding: 15px;
-                display: flex;
-                justify-content: center;
-                gap: 30px;
-                position: fixed;
-                top: 0;
-                left: 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Biography</title>
+    <link rel="stylesheet" href="biographyStyle.css">
+    <style>
+        body {
+            background-color: #adbbda;
+            font-family: Helvetica;
+            padding-top: 70px;
         }
 
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                font-size: 18px;
-                font-weight: bold;
-                padding: 10px 15px;
+        .header-nav {
+            font-family: Helvetica, sans-serif;
+            width: 100%;
+            background-color: #1C53A3;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
         }
 
-        .navbar a.active{
-                color: #65CCD8;
-                text-decoration: underline;
-
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
         }
 
-            .navbar a:hover {
-                background-color: #3d72c0;
-                border-radius: 5px;
+        .header-nav a:hover {
+            background-color: #3d72c0;
+            border-radius: 5px;
         }
 
-            
+        .header-nav a.active {
+            color: #65ccd8;
+        }
+        .section-nav {
+            font-family: Helvetica, sans-serif;
+            width: 100%;
+            background-color: #1C53A3;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 15px;
+            position: sticky;
+            top: 60px;
+            z-index: 1000;
+        }
+
+        .section-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px 12px;
+        }
+
+        .section-nav a:hover {
+            background-color: #3d72c0;
+            border-radius: 5px;
+        }
+
+        .container {
+            background-color: hsla(221, 97%, 87%, 0.973);
+            padding: 20px;
+            border-style: groove;
+            border-width: 1px;
+            border-radius: 30px;
+            margin: 50px auto 20px; 
+        }
+
+        h1 {
+            background-color: #1c53a3;
+            color:aliceblue;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1C53A3;
+            text-align: center;
+            font-size: 30px;
+            font-family: Georgia;
+        }
 
         hr{
             background-color: aliceblue;
@@ -46,97 +100,80 @@
             width: 100%;
         }
 
-            h1{ 
-                background-color: #1c53a3;
-                color:aliceblue;
-                text-align: center;
-                font-family: Helvetica, Lato;
-                padding: 20px;
-                border-radius: 30px;
-                margin-bottom: 20px;
-            }
-            h2{
-                color: #1C53A3;
-                text-align: center;
-                font-size: 30px;
-                font-family: Helvetica, Futura, Lato;
-                text-transform: capitalize;
-               
-                
-            }
-            body {
-            background-color: #adbbda;
-            font-family: Georgia;
-            padding-top: 70px; 
-             }
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            text-indent: 50px;
+        }
 
-            p{
-                text-align: justify;
-                line-height: 1.8;
-                text-indent: 50px;
-            }
-            
-            sup{
-                font-weight: bold;
-            }
+        .gotop{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 20px;
 
-            
-            .gotop a{
-                background-color: #1C53A3;
-                color: #F2F2F2;
-                font-family: Helvetica;
-                padding: 10px 20px;
-                text-decoration: none;
-                line-height: 50px;
-                
-            }
-
-            .container{
-            background-color: hsla(221, 97%, 87%, 0.973);
-            padding: 20px;
-            border-style: groove;
-            border-width: 1px;
-            border-radius: 30px;
-            margin-bottom: 20px;
            
-            }
+        }
+        .gotop a{
+            background-color: #1C53A3;
+            color: #F2F2F2;
+            font-family: Helvetica;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #F2F2F2;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
 
-            .imgcontainer {
-                display:flex;
+        .gotop a:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+            
+        }
+                
+        .imgcontainer {
+                display: flex;
                 justify-content: center; 
-                
-                
+                gap: 10px;
             }
 
-            img {
+        img {
             border-style: groove;
             border-color: #F2F2F2;
             background-color: #65CCD8;
             width: 200px;
             height: 200px;
             transition: transform 0.2s ease;
-
         }
 
-        img:hover{
+        img:hover {
             transform: scale(1.5);
         }
-            
-        </style>
+
+        sup{    
+            font-weight: bold;
+        }
+    </style>
             <meta charset="utf-8">
             <title></title>
         </head>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="biography.html#childhood">Childhood</a>
-            <a href="biography.html#teenage">Teenager Years</a>
-            <a href="biography.html#college">College Years</a>
-        </nav>
 
-        </div>
-        
 
         <body id="top">
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="biography.html" class="active">Biography</a>
+                <a href="skills.html">Skills</a>
+                <a href="resume.html">Resume</a>
+                <a href="photodump.html">Gallery</a>
+                <a href="media.html">My Beat</a>
+                <a href="film.html">Films</a>
+                <a href="tv.html">TV Shows</a>
+                <a href="dream.html">Destinations</a>
+                <a href="bucketlist.html">Bucket List</a>
+                <a href="contacts.html">Contact</a>
+            </nav>
+    
             <!--BRACEROS, GILRO-->
             <!--ITAD-->
         <div>
@@ -144,7 +181,14 @@
             <h1 id="childhood"> DISTANCE BETWEEN DREAMS </h1>
             <hr>
         </div>
+
+        
         <div class="container">
+            <div class="section-nav">
+                <a href="#childhood">Childhood</a>
+                <a href="#teenage">Teenager Years</a>
+                <a href="#college">College Years</a>
+            </div>
             <h2>Childhood Years </h2>
             <div class="imgcontainer">
             <a href="ch1.jpg" target="display"><img src="ch1.jpg" alt="Little Gilro doing silly pose" title="6 year-old me being silly"></a>

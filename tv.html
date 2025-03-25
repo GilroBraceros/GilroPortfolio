@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1C53A3;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.navbar {
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    background-color: #1C53A3;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #3d72c0;
+    border-radius: 5px;
+}
+
+.navbar a.active {
+    color: #65ccd8;
+}
+
+
+h1 {
+    text-align: center;
+    background-color: #1C53A3;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #1C53A3;
+}
+
+hr{
+    background-color: aliceblue;
+    height: 2px;
+    width: 100%;
+}
+    
+.genre-section {
+    padding: 15px;
+}
+
+.film-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+.category-section {
+        background-color: hsla(221, 97%, 87%, 0.973);
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+.category-section h2 {
+        color: #1C53A3;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .video-wrapper {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        gap: 20px;
+        
+        
+    }
+
+    
+
+    .video-card {
+        background-color: hsla(221, 54%, 80%, 0.973);
+        padding: 20px;
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+        width: 60%;
+
+    }
+
+    .video-card:hover {
+        transform: scale(1.02);
+    }
+
+    .video-card h3 {
+        color: #1C53A3;
+        margin: 0 0 10px 0;
+        min-height: 40px;
+    }
+
+    .video-card .description {
+        color: #322f2f;
+        font-style: italic;
+        margin: 0 0 15px 0;
+        height: 80px;
+        
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; 
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+    }
+
+
+
+        .film-container {
+            padding: 10px;
+        }
+
+        .category-section {
+            padding: 15px;
+        }
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="biography.html">Biography</a>
+    <a href="skills.html">Skills</a>
+    <a href="resume.html">Resume</a>
+    <a href="photodump.html">Gallery</a>
+    <a href="media.html">My Beat</a>
+    <a href="film.html">Films</a>
+    <a href="tv.html" class=active>TV Shows</a>
+    <a href="dream.html">Destinations</a>
+    <a href="bucketlist.html">Bucket List</a>
+    <a href="contacts.html">Contact</a>
+
+</nav>
+
+
+<div class="film-container">
+    <hr>
+    <h1>My Kind of TV Shows</h1>
+    <hr>
+
+    <div class="category-section">
+        <h2>Action</h2>
+        <div class="video-wrapper">
+            <div class="video-card">
+                <h3>Daredevil</h3>
+                <p class="description">Matt Murdock fights relentlessly for the law and justice, both as a crusading attorney and as the hard-hitting costumed crimefighter called Daredevil.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/7xALolZzhSM?si=J6Fb0jwYwuwrtVX8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <h3>Moon Knight</h3>
+                <p class="description">Moon Knight follows Steven Grant, a mild-mannered gift-shop employee, who becomes plagued with blackouts and memories of another life.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/x7Krla_UxRg?si=Lz1X-zkw2Z5cRe7J" allowfullscreen></iframe>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    
+    <div class="category-section">
+        <h2>Animated</h2>
+        <div class="video-wrapper">
+            <div class="video-card">
+                <h3>Invincible</h3>
+                <p class="description">An adult animated series based on the Skybound/Image comic about a teenager whose father is the most powerful superhero on the planet.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/-bfAVpuko5o?si=f_BMF6XHNAfhOygC" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <h3>Attack On Titan</h3>
+                <p class="description">The story follows the adventures of Eren Jaeger and his childhood friends Mikasa and Armin, whose lives are changed forever after a Colossal Titan breaches the wall of their home town.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/LV-nazLVmgo?si=Z204C4PYkJK7TBuh" allowfullscreen></iframe>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <div class="category-section">
+        <h2>Drama</h2>
+        <div class="video-wrapper">
+            <div class="video-card">
+                <h3>The Bear</h3>
+                <p class="description">Jeremy Allen White stars as Carmy Berzatto, an award-winning chef who returns to his hometown of Chicago to manage the chaotic kitchen at his deceased brother's Italian beef sandwich shop.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/gBmkI4jlaIo?si=OS58EjItiUc3z2CZ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <h3>Beef</h3>
+                <p class="description">Two people let a road rage incident burrow into their minds and slowly consume their every thought and action.</p>
+                <div class="video-container">
+                    <iframe src=https://www.youtube.com/embed/Gq7zgg0AQSA?si=RqcxdUz4ZdBMrMEn" allowfullscreen></iframe>
+                </div>
+            </div>
+            </div>
+    </div>
+
+
+
+</body>
+
+</html>

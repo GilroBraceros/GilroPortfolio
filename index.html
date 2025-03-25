@@ -19,8 +19,10 @@
             flex-direction: column;
             text-align: center;
             padding-top: 100px; 
+            overflow-x: hidden;
         }
 
+       
         .navbar {
             font-family: Helvetica, sans-serif;
             width: 100%;
@@ -48,117 +50,102 @@
             border-radius: 5px;
         }
 
-        .navbar a.active {
-            color: #65ccd8;
-        }
+        .navbar a.active{
+            color: #65CCD8;
 
+        }
         .container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
-            gap: 20px;
-            padding: 50px;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 100px;
+            margin: 20px auto;
             border-radius: 20px;
-            width: 60%;
-            max-width: 600px;
-            
-           
+            width: 85%;
+            max-width: 1200px;
+            background-color: hsla(221, 97%, 87%, 0.7);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border-style: outset;
+            border-color: #5090f0;
         }
 
-        .image {
-            background-color: #1C53A3;
-            padding: 10px;
-            border-style: solid;
-            border-color: aliceblue;
-            border-width: 1px;
-            border-radius: 10px;
-            width: 220px; 
-            height: 220px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .image img {
-            width: 100%;
-            height: auto;
-            border-radius: 30px;
-        }
-
-        .text h2 {
-            margin: 0;
-            font-size: 28px;
-            font-weight: bold;
-            color: #1C53A3;
+        .text {
+            max-width: 500px;
         }
 
         .text h1 {
-            margin: 10px 0;
-            font-size: 40px;
-            font-weight: bold;
-            color: #1C53A3;
+            font-size: 3.5rem;
+            margin: 0 0 20px;
+            color: #0e57c6;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1px;
+        }
+
+        .text h2 {
+            font-size: 2.5rem;
+            color: #0e57c6;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 0 0 15px;
         }
 
         .text p {
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #3f5c89;
+            margin: 0;
         }
 
-        .video-container { 
-            margin-top:10px;
+        .video-container {
+            flex: 1;
             display: flex;
             justify-content: center;
-            width: 100%; 
         }
 
         .video-container video {
-            background-color: #1C53A3;
             width: 100%;
-            height: 300px; 
-            max-width: 300px;
-            border-style: solid;
-            border-color: aliceblue;
-            border-width: 1px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+            border-style: outset;
+            border-color: #5090f0;
+        }
+
+        .video-container video:hover {
+            transform: translateY(-5px);
         }
 
     </style>
 </head>
 
 <body>
-
     <nav class="navbar">
         <a href="index.html" class="active">Home</a>
         <a href="biography.html">Biography</a>
         <a href="skills.html">Skills</a>
         <a href="resume.html">Resume</a>
         <a href="photodump.html">Gallery</a>
-        <a href="media.html">Media</a>
+        <a href="media.html">My Beat</a>
+        <a href="film.html">Films</a>
+        <a href="tv.html">TV Shows</a>
+        <a href="dream.html">Destinations</a>
+        <a href="bucketlist.html">Bucket List</a>
         <a href="contacts.html">Contact</a>
-       
     </nav>
 
     <div class="container">
-        <div class="image">
-            <img src="me.jpg" alt="Profile Picture">
+        <div class="video-container">
+            <video src="welcome.mp4" controls></video>
         </div>
         
         <div class="text">
-            <h2>Hello!</h2>
-            <h1>I'm Gilro</h1>
-            <p>A second-year college student</p>
-        </div>
-
-        <div class="video-container">
-           <video src="welcome.mp4" controls></video>
+            <h1>Welcome to My Website!</h1>
+            <h2>I'm Gilro</h2>
+            <p>A second-year college student fueled by passion, creativity, and an unquenchable thirst for knowledge.</p>
         </div>
     </div>
-
 </body>
 </html>
-
-
-
