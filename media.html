@@ -14,7 +14,7 @@
             color: #1C53A3;
             font-family: Georgia, serif;
             margin: 0;
-            padding: 80px 20px;
+            padding-top: 90px;
             max-width: 1200px;
             margin: 0 auto;
             
@@ -77,21 +77,22 @@
             background-color: aliceblue;
             height: 2px;
             width: 100%;
+            
         }
 
 
-            .audio {
+        .audio {
             width: 100%;
             margin-top: 10px
         }
 
         
-            .music-container {
+        .music-container {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 padding: 15px; 
-                gap: 15px;   
+                gap: 10px;   
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -101,7 +102,7 @@
             }
         
         .track-card {
-            background: hsla(221, 97%, 87%, 0.973);
+            background-color: rgba(221, 235, 251, 0.95);
             border-radius: 12px;
             padding: 15px;
             width: 300px;
@@ -112,11 +113,16 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            transition: box-shadow 0.3s ease;
+            position: relative;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
             
         }  
         
         .track-card:hover {
-            transform: scale(1.05);
+            border-color: #1C53A3;
+            box-shadow: 0px 0px 15px rgba(28, 83, 163, 0.8);
         }
         .artist {
                 font-size: 16px;
@@ -260,6 +266,7 @@
     
                     
                     </div>
+
                     <div class="track-card">
                         <img src="powers.jpg" alt="Daniel Caesar" class="artist-img">
                         <div class="track-info">
