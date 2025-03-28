@@ -3,7 +3,19 @@
     <head>
         <style type="text/css"> 
 
-        
+    body {
+            padding-top: 70px;
+            background-image: url("background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #1C53A3;
+            margin: 20px;
+            font-size: 16px;
+            font-family: Helvetica;
+            line-height: 1.8;
+        }
 
         .header{ 
                 background-color: #1c53a3;
@@ -12,10 +24,7 @@
                 font-family: Helvetica, Lato;
                 padding: 20px;
                 border-radius: 30px;
-                margin-bottom: 20px;
-
-            
-            
+                margin-bottom: 20px;  
         }
 
         .navbar {
@@ -29,6 +38,7 @@
             position: fixed;
             top: 0;
             left: 0;
+            z-index: 1000;
         }
         .navbar a {
             color: white;
@@ -41,6 +51,7 @@
         .navbar a:hover {
             background-color: #3d72c0;
             border-radius: 5px;
+            
         }
 
         .navbar a.active {
@@ -80,23 +91,12 @@
 
         }
         hr{
-            background-color: aliceblue;
+            background-color: #1C53A3;
             height: 2px;
             width: 100%;
         }
 
-        body {
-            padding-top: 70px;
-            background-image: url("background.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: #1C53A3;
-            margin: 20px;
-            font-size: 16px;
-            font-family: Helvetica;
-        }
+        
         P {
             text-align: justify;
             line-height: 1.8;
@@ -106,15 +106,13 @@
             margin-bottom: 20px;
         }
         .container{
-            background-color: hsla(221, 97%, 87%, 0.973);
-            box-shadow: 5px 5px 10px #b5d6ed94;
+            background-color: rgba(221, 235, 251, 0.95);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            border-radius: 50px;
-            margin-bottom: 20px;
-            border-color: #a6c3dd;
-            border-style: solid;
-            border-width: 1px;
+            border-radius: 20px;
+            margin-bottom: 30px;
         }
+        
 
         .imgcontainer {
                 display:flex;
@@ -125,44 +123,53 @@
                 
         }
 
-        img {
-            background-color: #65CCD8;
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .content img {
             width: 250px;
             height: 250px;
-            transition: transform 0.2s ease;
-
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+        .content img:hover {
+            opacity: 0.8;
+            box-shadow: 0px 0px 15px rgba(28, 83, 163, 0.8);
         }
 
-        img:hover{
-            transform: scale(1.5);
-        }
-
-        .imgparagraph{
+        .thumbnail{
             float: left;
             margin: 20px;
             margin-bottom: 20px;
             width: 200px;
             height: 200px;
+            transition: box-shadow 0.3s ease;
         }
 
+        .thumbnail:hover{
+            opacity: 0.8;
+            box-shadow: 0px 0px 10px rgba(28, 83, 163, 0.8);
+        }
+        
+        .text {
+            flex: 1;
+            min-width: 300px;
+        }
         .back {
-            display: flex;
-            justify-content: flex-end;
+            text-align: right;
             margin-top: 20px;
-            margin-right: 20px;
         }
-
         .back a {
             background-color: #1C53A3;
-            color: #F2F2F2;
-            font-family: Helvetica;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #F2F2F2;
+            color: white;
             text-decoration: none;
             padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
         }
-
         .back a:hover {
             transform: scale(1.1);
             transition: transform 0.3s ease;
@@ -193,33 +200,61 @@
             <h1>Norway</h1>
         </div>
         <div class="container">
-            <div><h2>Why Norway?</h2></div>
+            <h2>Why Norway?</h2>
+            <div>
             <hr>
-            <img src="norway.jpg" alt="Japan" title Japan class="imgparagraph">
+            <a href="norway.jpg" target="display"><img src="norway.jpg" alt="Japan" title="Norway" class="thumbnail"></a>
             <p>Norway is one my dream destination because of its breathtaking landscapes and magical skies. I want to see the towering fjords, crystal-clear lakes, and endless snow-capped mountains that look like something out of a painting. The Northern Lights are a huge reason I want to go just imagining the sky glowing in shades of green and purple over the Arctic is surreal.
-                </p>
+             </p>
                 
             <p> I’d love to take a scenic road trip through winding mountain roads, visit the peaceful villages along the fjords, and maybe even stay in a cozy cabin surrounded by nature. Whether it’s the midnight sun in summer or the star-filled winter nights, Norway’s skies always seem unreal. It’s the kind of place that makes you feel small in the best way, surrounded by pure, untouched beauty.
             </p>
-            
+        </div>
         </div>
 
         <div class="container">
-            <div><h2>Beauty of Norway</h2></div>
+            <h2>How to Go to Norway?</h2>
+            <hr>
+            <p><b>You can fly directly from the Philippines to Norway via major international airports:</b></p>
+            <ul>
+                <li><b>Departure Airports:</b> Manila (MNL), Cebu (CEB), Clark (CRK)</li>
+                <li><b>Arrival Airports:</b> Oslo (OSL), Bergen (BGO), Stavanger (SVG)</li>
+            </ul>
+            <p><b>Travel Tips:</b></p>
+            <ul>
+                <li>Book flights early, as fares can be expensive, especially during peak seasons.</li>
+                <li>Best time to visit is June-August for the Midnight Sun or December-February for the Northern Lights.</li>
+                <li>Norway has a high cost of living, so budget wisely for food, transportation, and accommodations.</li>
+                <li>Use public transport like trains and ferries for scenic travel experiences.</li>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <h2>Beauty of Norway</h2>
+            <hr>
+            <div class="content">
+                <a href="norway/n8.png" target="display"><img src="norway/n8.png" alt="Geirangerfjord" title="Geirangerfjord"></a>
 
-        <div class="imgcontainer">
-            <a href="norway/n1.png" target="display"><img src="norway/n1.png" alt=""></a>
-            <a href="norway/n2.png" target="display"><img src="norway/n2.png" alt=""></a>
-            <a href="norway/n3.png" target="display"><img src="norway/n3.png" alt=""></a>
-            <a href="norway/n4.png" target="display"><img src="norway/n4.png" alt=""></a>
+                <p class="text"><b>Geirangerfjord</b> is a UNESCO World Heritage Site, and arguably the most famous fjord on the planet. Known for its deep blue waters, towering mountain peaks and abundant waterfalls, Geirangerfjord is the place to go for striking scenery.</p>
+            </div>
+            <div class="content">
+                <a href="norway/n2.png" target="display"><img src="norway/n2.png" alt="Tromso" title="Tromso"></a>
+
+
+                <p class="text">In <b>Tromso</b> spectators will find themselves in the center of the Northern Lights Oval which means they have a better chance of watching the lights from September to April each year, and the city has many tourism companies to take the visitors to the best viewing spots. Tromso is often mentioned as the Capital of the North, and it is the cultural center of northern Norway, with a wide variety of restaurants, draws, and accommodations, including the Tromso Ice Domes, ice hotel, and Aurora Spirit, the northernmost liquor shop in the world.</p>
+            </div>
+            <div class="content">
+                <a href="norway/n4.png" target="display"><img src="norway/n4.png" alt="Stavanger" title="Stavanger"></a>
+
+                <p class="text">The historic city of <b>Stavanger</b> is situated in southwestern Norway, near the coast of the Norwegian Sea. Established in the 12th century, Stavanger has many tourist attractions in Norway to offer including an old cathedral, which was built around the time of the city’s conception, and many other wonderful historical wooden structures from centuries past. The neighboring areas around Stavanger are full of upright, dramatic cliffs, chill blue waters and wide skies. For a fun hike and panoramic views, visitors should visit the mountain plateau of Preikestolen.</p>
         </div>
-        <div class="imgcontainer">
-            <a href="norway/n5.png" target="display"><img src="norway/n5.png" alt=""></a>
-            <a href="norway/n6.png" target="display"><img src="norway/n6.png" alt=""></a>
-            <a href="norway/n7.png" target="display"><img src="norway/n7.png" alt=""></a>
-            <a href="norway/n8.png" target="display"><img src="norway/n8.png" alt=""></a>
-        </div>
-        </div>
+    
+        <div class="content">
+            <a href="norway/n5.png" target="display"><img src="norway/n5.png" alt="Odda" title="Odda"></a>
+    
+            <p class="text"> <b>Odda</b> lies between Norway’s Hardangervidda National Park to the east and Folgefonna National Park to the west. It is home to Trolltunga (the Troll’s Tongue), a long, slender precipice of rock that extends dangerously out from the cliff behind it in a gravity-defying exhibition of natural beauty, with a view that is well worth the adrenaline pump. Spectators will find lots of entertainment opportunities for camping, both in tents and in mountain cabins or lodges, as well as canoeing, hiking, and climbing. In the colder months, here you will find a lot of slopes just waiting to be skied and glaciers ready to be ascended.
+            </p>
+    </div>
 
         <div class="back">
             <a href="dream.html">Go Back</a>

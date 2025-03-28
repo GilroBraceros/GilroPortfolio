@@ -1,90 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <style type="text/css"> 
-
-        
-
-        .header{ 
-                background-color: #1c53a3;
-                color:aliceblue;
-                text-align: center;
-                font-family: Helvetica, Lato;
-                padding: 20px;
-                border-radius: 30px;
-                margin-bottom: 20px;
-
-            
-            
-        }
-
-        .navbar {
-            font-family: Helvetica, sans-serif;
-            width: 100%;
-            background-color: #1C53A3;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 10px 15px;
-        }
-
-        .navbar a:hover {
-            background-color: #3d72c0;
-            border-radius: 5px;
-        }
-
-        .navbar a.active {
-        color: #65ccd8;
-         }
-
-         
-         
-
-         h1{
-            text-align: center;
-            font-family: Georgia;
-            background-color: #1C53A3;
-            color: aliceblue;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            text-decoration: underline;
-            padding: 20px;
-            border-radius: 10px;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-         }
-
-        
-
-        h2{ 
-
-            text-align: center;
-            font-family: Georgia;
-            color: #1C53A3;
-            text-shadow: 2px 2px 4px rgba(14, 146, 254, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-           
-            
-
-        }
-        hr{
-            background-color: aliceblue;
-            height: 2px;
-            width: 100%;
-        }
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan - Dream Destinations</title>
+    <style>
         body {
             padding-top: 70px;
             background-image: url("background.png");
@@ -96,8 +16,60 @@
             margin: 20px;
             font-size: 16px;
             font-family: Helvetica;
+            line-height: 1.8;
+            margin: 0 20px;
+            z-index: 1000;
+
         }
-        P {
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #1C53A3;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background-color: #3d72c0;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia;
+            background-color: #1C53A3;
+            color: aliceblue;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-decoration: underline;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        h2 {
+          
+            text-align: center;
+            font-family: Georgia;
+            color: #1C53A3;
+            text-shadow: 2px 2px 4px rgba(14, 146, 254, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p{
             text-align: justify;
             line-height: 1.8;
             letter-spacing: 1px;
@@ -105,126 +77,147 @@
             margin: 32px;
             margin-bottom: 20px;
         }
-        .container{
-            background-color: hsla(221, 97%, 87%, 0.973);
-            box-shadow: 5px 5px 10px #b5d6ed94;
+
+        hr{
+            background-color: #1C53A3;
+            height: 2px;
+            width: 100%;
+        }
+
+        .container {
+            background-color: rgba(221, 235, 251, 0.95);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            border-radius: 50px;
-            margin-bottom: 20px;
-            border-color: #a6c3dd;
-            border-style: solid;
-            border-width: 1px;
+            border-radius: 20px;
+            margin-bottom: 30px;
         }
-
-        .imgcontainer {
-                display:flex;
-                justify-content: center; 
-                gap: 25px;
-                margin-bottom: 20px;
-                
-                
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
         }
-
-        img {
-            background-color: #65CCD8;
+        .content img {
             width: 250px;
             height: 250px;
-            transition: transform 0.2s ease;
-
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+        .content img:hover {
+            opacity: 0.8;
+            box-shadow: 0px 0px 15px rgba(28, 83, 163, 0.8);
         }
 
-        img:hover{
-            transform: scale(1.5);
-        }
-
-        .imgparagraph{
+        .thumbnail{
             float: left;
             margin: 20px;
             margin-bottom: 20px;
             width: 200px;
             height: 200px;
+            transition: box-shadow 0.3s ease;
         }
 
+        .thumbnail:hover{
+            opacity: 0.8;
+            box-shadow: 0px 0px 10px rgba(28, 83, 163, 0.8);
+        }
+        
+        .text {
+            flex: 1;
+            min-width: 300px;
+        }
         .back {
-            display: flex;
-            justify-content: flex-end;
+            text-align: right;
             margin-top: 20px;
-            margin-right: 20px;
         }
-
         .back a {
             background-color: #1C53A3;
-            color: #F2F2F2;
-            font-family: Helvetica;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #F2F2F2;
+            color: white;
             text-decoration: none;
             padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
         }
-
         .back a:hover {
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
-
-        </style>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body id="top">
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="biography.html">Biography</a>
-            <a href="skills.html">Skills</a>
-            <a href="resume.html">Resume</a>
-            <a href="photodump.html">Gallery</a>
-            <a href="media.html">My Beat</a>
-            <a href="film.html">Films</a>
-            <a href="tv.html">TV Shows</a>
-            <a href="dream.html">Destinations</a>
-            <a href="bucketlist.html">Bucket List</a>
-            <a href="contacts.html">Contact</a>
-        </nav>
-        <!--BRACEROS, GILRO-->
-        <!--ITAD-->
-
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photodump.html">Gallery</a>
+        <a href="media.html">My Beat</a>
+        <a href="film.html">Films</a>
+        <a href="tv.html">TV Shows</a>
+        <a href="dream.html">Destinations</a>
+        <a href="bucketlist.html">Bucket List</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+    
+    <h1>Japan</h1>
+    
+    <div class="container">
+        <h2>Why Japan?</h2>
+        <hr>
         <div>
-            <h1>Japan</h1>
-        </div>
-        <div class="container">
-            <div><h2>Why Japan?</h2></div>
-            <hr>
-            <img src="japan.jpg" alt="Japan" title Japan class="imgparagraph">
-            <p>Japan is one my dream destination because it has everything I love the cities, rich culture, amazing food, and stunning landscapes. I want to walk through Tokyo’s neon-lit streets, soak in Kyoto’s peaceful temples, and see cherry blossoms in full bloom.</p>
-                
-            <p>The food alone is enough reason to go foods like fresh sushi, ramen, and treats straight from the source. I’d love to ride a bullet train, visit Akihabara for anime and gaming, and just soak in the mix of tradition and innovation. It’s a place that feels both futuristic and deeply rooted in history, and I know it would be an unforgettable experience.</p>
-            
-        </div>
+            <a href="japan.jpg" target="display"><img src="japan.jpg" alt="Japan" class="thumbnail"></a>
 
-        <div class="container">
-            <div><h2>Beauty of Japan</h2></div>
-        <div class="imgcontainer">
-            <a href="japan/j1.png" target="display"><img src="japan/j1.png" alt=""></a>
-            <a href="japan/j2.png" target="display"><img src="japan/j2.png" alt=""></a>
-            <a href="japan/j3.png" target="display"><img src="japan/j3.png" alt=""></a>
-            <a href="japan/j4.png" target="display"><img src="japan/j4.png" alt=""></a>
-        </div>
-        <div class="imgcontainer">
-            <a href="japan/j5.png" target="display"><img src="japan/j5.png" alt=""></a>
-            <a href="japan/j6.png" target="display"><img src="japan/j6.png" alt=""></a>
-            <a href="japan/j7.png" target="display"><img src="japan/j7.png" alt=""></a>
-            <a href="japan/j8.png" target="display"><img src="japan/j8.png" alt=""></a>
-        </div>
-        </div>
+            <p>Japan has always been a place I’ve wanted to visit because of its mix of modern cities, rich culture, and beautiful scenery. I’d love to walk through Tokyo’s busy streets, explore Kyoto’s historic temples, and see cherry blossoms in full bloom at spots like Ueno Park and the Philosopher’s Path. Riding the Shinkansen, visiting landmarks like Himeji Castle, and relaxing in an onsen with a view of Mount Fuji are experiences I’d really like to have.</p>
 
-        <div class="back">
-            <a href="dream.html">Go Back</a>
+            <p>The food is another big reason Japan interests me. I want to try authentic ramen in Fukuoka, fresh sushi at Tsukiji Outer Market, and Osaka’s well-known street food. I’d also like to visit places like the Ghibli Museum and Akihabara to see more of Japan’s pop culture. Whether in a busy city or a quiet countryside town, I think Japan has a lot to offer, and I hope to experience it someday.
+            </p>
+
+         
         </div>
+    </div>
+    
+    <div class="container">
+        <h2>How to Go to Japan?</h2>
+        <hr>
+        <p><b>You can fly directly from the Philippines to Japan via major international airports:</b></p>
+        <ul>
+            <li><b>Departure Airports:</b> Manila (MNL), Cebu (CEB), Clark (CRK)</li>
+            <li><b>Arrival Airports:</b> Tokyo (Narita/Haneda), Osaka (Kansai), Nagoya (Chubu Centrair)</li>
+        </ul>
+        <p><b>Travel Tips:</b></p>
+        <ul>
+            <li>Book your flight in advance to get the best deals.</li>
+            <li>Best time to visit is March-May, ideal for cherry blossoms and mild weather.</li>
+            <li>Respect local customs, especially in temples, shrines, and restaurants.</li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h2>Beauty of Japan</h2>
+        <hr>
+        <div class="content">
+            <a href="japan/j1.png" target="display"><img src="japan/j1.png" alt="Himeji Castle" title="Hijemi Castle"></a>
+            <p class="text"><b>Himeji Castle</b> is an ancient Japanese castle in Hyogo Prefecture, 650km west of Tokyo. Built atop a 45.6m high hill, its grand structure and 83 interconnected buildings create a complex maze-like fortress. Despite enduring many wars, Himeji Castle remains one of Japan’s most well-preserved historical landmarks.</p>
+        </div>
+        <div class="content">
+            <a href="japan/j7.png" target="display"><img src="japan/j7.png" alt="Itsukushima Shrine" title="Itsukushima Shrine"></a>
+            <p class="text">Located on Miyajima Island in Hiroshima Prefecture, <b>Itsukushima Shrine</b> is one of the most important and famous Shinto shrines in Japan. This place was built into a complex consisting of a main temple, many small temples arranged around it, many bridges and corridors connecting the areas above the sea in front of Mount Misen of Miyajima Island.</p>
+        </div>
+        <div class="content">
+            <a href="japan/j2.png" target="display"><img src="japan/j2.png" alt="Nachi Waterfall" title="Nachi Waterfall"></a>
+            <p class="text"><b>Nachi Waterfall</b> is a 133 meter tall waterfall boasts the longest drop in Japan, with one ton of water dropping down the cliff every second. It enshrines the deity of Hiro Shrine, the auxiliary shrine of Kumano Nachi Taisha Grand Shrine. This awe-inspiring and dynamic view is truly unforgettable.</p>
+    </div>
 
-      
+    <div class="content">
+        <a href="japan/j8.png" target="display"><img src="japan/j8.png" alt="Arashiyama Bamboo Fores" title="Arashiyama Bamboo Forest"></a>
 
-        
-    </body>
+        <p class="text"><b> Arashiyama Bamboo </b> Forest is easily one of the top must-visit places in Kyoto, if not all of Japan! Towering slender bamboo stalks reaching into the sky. Eerie, clacking music as the stalks sway in the wind. Ancient shrines scattered along the trail and nearby. Stunning Japanese gardens with ponds and views. Arashiyama Bamboo Forest, sometimes called Arashiyama Bamboo Grove or Sagano Bamboo Grove, is located on the western edge of Kyoto along the beautiful Katsura River in the foothills of Mount Arashiyama (also called Mount Ogura).</p>
+</div>
 
+    
+    
+    <div class="back">
+        <a href="dream.html">Go Back</a>
+    </div>
+</body>
 </html>

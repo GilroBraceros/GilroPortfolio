@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="utf-8">
     <title>My Profile</title>
     <style>
         body {
-            background-image: url('background.png');  
-            background-size: cover;   
-            background-position: center; 
-            background-repeat: no-repeat; 
-            background-attachment: fixed; 
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #1C53A3;
             font-family: Georgia, serif;
             display: flex;
@@ -18,11 +19,10 @@
             height: 100vh;
             flex-direction: column;
             text-align: center;
-            padding-top: 100px; 
+            padding-top: 70px;
             overflow-x: hidden;
         }
 
-       
         .navbar {
             font-family: Helvetica, sans-serif;
             width: 100%;
@@ -50,10 +50,10 @@
             border-radius: 5px;
         }
 
-        .navbar a.active{
+        .navbar a.active {
             color: #65CCD8;
-
         }
+
         .container {
             display: flex;
             flex-direction: row;
@@ -65,7 +65,7 @@
             border-radius: 20px;
             width: 85%;
             max-width: 1200px;
-            background-color: hsla(221, 97%, 87%, 0.7);
+            background-color: rgba(221, 235, 251, 0.95);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             border-style: outset;
             border-color: #5090f0;
@@ -98,6 +98,22 @@
             margin: 0;
         }
 
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #1C53A3;
+            font-size: 30px;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #4a8df3;
+            opacity: .8;
+        }
+
         .video-container {
             flex: 1;
             display: flex;
@@ -117,10 +133,8 @@
         .video-container video:hover {
             transform: translateY(-5px);
         }
-
     </style>
 </head>
-
 <body>
     <nav class="navbar">
         <a href="index.html" class="active">Home</a>
@@ -140,11 +154,16 @@
         <div class="video-container">
             <video src="welcome.mp4" controls></video>
         </div>
-        
+
         <div class="text">
             <h1>Welcome to My Website!</h1>
             <h2>I'm Gilro</h2>
             <p>A second-year college student fueled by passion, creativity, and an unquenchable thirst for knowledge.</p>
+            <div class="social-icons">
+                <a href="mailto:gilrobraceros23@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/ibflowin/" target="display" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/gilro.braceros.1" target="display" title="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
         </div>
     </div>
 </body>

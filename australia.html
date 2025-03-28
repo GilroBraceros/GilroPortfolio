@@ -5,6 +5,21 @@
 
         
 
+body {
+            padding-top: 70px;
+            background-image: url("background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #1C53A3;
+            margin: 20px;
+            font-size: 16px;
+            font-family: Helvetica;
+            line-height: 1.8;
+            z-index: 1000;
+        }
+
         .header{ 
                 background-color: #1c53a3;
                 color:aliceblue;
@@ -12,10 +27,7 @@
                 font-family: Helvetica, Lato;
                 padding: 20px;
                 border-radius: 30px;
-                margin-bottom: 20px;
-
-            
-            
+                margin-bottom: 20px;  
         }
 
         .navbar {
@@ -80,23 +92,12 @@
 
         }
         hr{
-            background-color: aliceblue;
+            background-color: #1C53A3;
             height: 2px;
             width: 100%;
         }
 
-        body {
-            padding-top: 70px;
-            background-image: url("background.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: #1C53A3;
-            margin: 20px;
-            font-size: 16px;
-            font-family: Helvetica;
-        }
+        
         P {
             text-align: justify;
             line-height: 1.8;
@@ -106,15 +107,13 @@
             margin-bottom: 20px;
         }
         .container{
-            background-color: hsla(221, 97%, 87%, 0.973);
-            box-shadow: 5px 5px 10px #b5d6ed94;
+            background-color: rgba(221, 235, 251, 0.95);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            border-radius: 50px;
-            margin-bottom: 20px;
-            border-color: #a6c3dd;
-            border-style: solid;
-            border-width: 1px;
+            border-radius: 20px;
+            margin-bottom: 30px;
         }
+        
 
         .imgcontainer {
                 display:flex;
@@ -125,48 +124,58 @@
                 
         }
 
-        img {
-            background-color: #65CCD8;
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .content img {
             width: 250px;
             height: 250px;
-            transition: transform 0.2s ease;
-
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+        .content img:hover {
+            opacity: 0.8;
+            box-shadow: 0px 0px 15px rgba(28, 83, 163, 0.8);
         }
 
-        img:hover{
-            transform: scale(1.5);
-        }
-
-        .imgparagraph{
+        .thumbnail{
             float: left;
             margin: 20px;
             margin-bottom: 20px;
             width: 200px;
             height: 200px;
+            transition: box-shadow 0.3s ease;
         }
 
+        .thumbnail:hover{
+            opacity: 0.8;
+            box-shadow: 0px 0px 10px rgba(28, 83, 163, 0.8);
+        }
+        
+        .text {
+            flex: 1;
+            min-width: 300px;
+        }
         .back {
-            display: flex;
-            justify-content: flex-end;
+            text-align: right;
             margin-top: 20px;
-            margin-right: 20px;
         }
-
         .back a {
             background-color: #1C53A3;
-            color: #F2F2F2;
-            font-family: Helvetica;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #F2F2F2;
+            color: white;
             text-decoration: none;
             padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
         }
-
         .back a:hover {
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
+
 
         </style>
         <meta charset="utf-8">
@@ -195,7 +204,7 @@
         <div class="container">
             <div><h2>Why Australia?</h2></div>
             <hr>
-            <img src="australia.jpg" alt="Japan" title Japan class="imgparagraph">
+            <a href="australia.jpg" target="display"><img src="australia.jpg" alt="Australia" title="Australia"  class="thumbnail"></a>
             <p>Australia is one of my dream destination because of its diverse landscapes and incredible natural beauty. I want to see the Sydney Opera House up close, walk along the golden beaches of the Gold Coast, and explore the Great Barrier Reef with its vibrant marine life. The idea of watching the sunset over Uluru, surrounded by the vast Outback, feels like a once-in-a-lifetime experience. Cities like Melbourne and Sydney also fascinate me with their mix of modern culture, stunning waterfronts, and lively atmosphere.
                 </p>
                 
@@ -205,22 +214,68 @@
         </div>
 
         <div class="container">
-            <div><h2>Beauty of Australia</h2></div>
+            <h2>How to Go to Australia?</h2>
+            <hr>
+            <p><b>You can fly directly from the Philippines to Australia via major international airports:</b></p>
+            <ul>
+                <li><b>Departure Airports:</b> Manila (MNL), Cebu (CEB), Clark (CRK)</li>
+                <li><b>Arrival Airports:</b> Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Perth (PER)</li>
+            </ul>
+            <p><b>Travel Tips:</b></p>
+            <ul>
+                <li>Book flights in advance to secure the best fares, especially during peak seasons.</li>
+                <li>Best time to visit depends on the region—December to February for summer, June to August for winter activities.</li>
+                <li>Australia has strict customs regulations, so check prohibited items before packing.</li>
+                <li>Consider getting an Opal (Sydney) or Myki (Melbourne) card for convenient public transport.</li>
+            </ul>
+        </div>
+        
 
-        <div class="imgcontainer">
-            <a href="australia/a1.png" target="display"><img src="australia/a1.png" alt=""></a>
-            <a href="australia/a2.png" target="display"><img src="australia/a2.png" alt=""></a>
-            <a href="australia/a3.png" target="display"><img src="australia/a3.png" alt=""></a>
-            <a href="australia/a4.png" target="display"><img src="australia/a4.png" alt=""></a>
-        </div>
-        <div class="imgcontainer">
-            <a href="australia/a5.png" target="display"><img src="australia/a5.png" alt=""></a>
-            <a href="australia/a6.png" target="display"><img src="australia/a6.png" alt=""></a>
-            <a href="australia/a7.png" target="display"><img src="australia/a7.png" alt=""></a>
-            <a href="australia/a8.png" target="display"><img src="australia/a8.png" alt=""></a>
-        </div>
-        </div>
 
+
+        <div class="container">
+            <h2>How to Go to Norway?</h2>
+            <hr>
+            <p><b>You can fly directly from the Philippines to Norway via major international airports:</b></p>
+            <ul>
+                <li><b>Departure Airports:</b> Manila (MNL), Cebu (CEB), Clark (CRK)</li>
+                <li><b>Arrival Airports:</b> Oslo (OSL), Bergen (BGO), Stavanger (SVG)</li>
+            </ul>
+            <p><b>Travel Tips:</b></p>
+            <ul>
+                <li>Book flights early, as fares can be expensive, especially during peak seasons.</li>
+                <li>Best time to visit is June-August for the Midnight Sun or December-February for the Northern Lights.</li>
+                <li>Norway has a high cost of living, so budget wisely for food, transportation, and accommodations.</li>
+                <li>Use public transport like trains and ferries for scenic travel experiences.</li>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <h2>Beauty of Australia</h2>
+            <hr>
+            <div class="content">
+                <a href="australia/a1.png" target="display"><img src="australia/a1.png" alt="Sydney Opera House" title="Sydney Opera House"></a>
+
+                <p class="text"><b>Sydney, Australia</b> offers the Sydney Opera house, flanked by the scenic Harbor Bridge and the beautiful Royal Botanic Gardens, the Sydney Opera House is one of the most popular Australian tourist attractions. Considered as an architectural masterpiece of the century, this feat by mankind, hosts multiple venues designed to reflect the image of a huge sailing ship and resembles billowing sails or shells.</p>
+            </div>
+            <div class="content">
+                <a href="australia/a2.png" target="display"><img src="australia/a2.png" alt="Uluru" title="Uluru"></a>
+
+
+                <p class="text">One of the largest monoliths in the world, <b>Uluru</b> or Ayers Rock is another important Australia tourist places. Located within the Kata Tjuta National Park, this striking red monolith sandstone formation, meaning ‘shadowy place’, stands more than 348 meters high. This is one of the best place for hitchhiking in Australia. If you are looking for Australia destinations that offer an offbeat experience, far away from the hustle and bustle of the city, this is the ideal place for you.</p>
+            </div>
+            <div class="content">
+                <a href="australia/a3.png" target="display"><img src="australia/a3.png" alt="Harbor Bridge" title="Harbor Bridge"></a>
+
+                <p class="text">Among the most celebrated Australia tourist attractions, the <b>Sydney Harbor Bridge</b> is a must-visit. Rising 134 m above the harbor, the bridge is affectionately called “the Coat hanger”. This engineering marvel is also the largest steel arch bridge in the world.</p>
+        </div>
+    
+        <div class="content">
+            <a href="australia/a4.png" target="display"><img src="australia/a4.png" alt="Port Campbell National Park" title="Port Campbell National Park"></a>
+    
+            <p class="text"><b>Port Campbell</b> National Park is world famous for its extraordinary collection of wave-sculpted rock formations and the Twelve Apostles. Loch Ard Gorge, site of a 19th century shipwreck 'Loch Ard', as well as the Island Archway and London Bridge are other highlights.
+            </p>
+    </div>
         <div class="back">
             <a href="dream.html">Go Back</a>
         </div>
